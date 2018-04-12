@@ -22,7 +22,9 @@
   "main": "index.js",
   "repository": "https://github.com/Zougheb/weather-forecast.git",
   "scripts": {
-    "start": "node ./node_modules/webpack-dev-server/bin/webpack-dev-server.js"
+    "dev": "node ./node_modules/webpack-dev-server/bin/webpack-dev-server.js",
+    "postinstall": "webpack -p",
+    "start": "node server.js"
   },
   "author": "Mahmoud Zougheb <m.zougheb@gmail.com>",
   "license": "MIT",
